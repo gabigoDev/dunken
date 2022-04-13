@@ -9,6 +9,7 @@
             href="../imagenes/favicon.ico"
             type="image/x-icon"
         />
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
         <title>Contacto-DunKen Casa de Cafe</title>
         <link rel="stylesheet" href="../estilos/estilos.css" />
     </head>
@@ -47,40 +48,83 @@
                 en comunicarte.
             </p>
 
-            <form>
-                <fieldset>
+            <form class="container">
+                <div class="mb-3 row">
                     <legend>Sucursales</legend>
-                    <select name="" id="">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="" id="">
                         <option value="Mendoza Centro">Mendoza Centro</option>
                         <option value="Chacras de Coria">
                             Chacras de Coria
                         </option>
                     </select>
-                </fieldset>
-                <div>
-                    <label for="Ingrese nombre y apellido"
-                        >Nombre y Apellido:</label
+                </div>
+                <div class="mb-3 row">
+                    <label
+                        for="exampleFormControlInput1"
+                        class="form-label col-sm-2"
+                        >Nombre</label
                     >
-                    <input
-                        type="text"
-                        placeholder="Ingrese nombre y apellido"
-                    />
+                    <div class="col-sm-10">
+                        <input
+                            type="text"
+                            class="form-control col-sm-10"
+                            id="exampleFormControlInput1"
+                            placeholder="Nombre"
+                        />
+                    </div>
                 </div>
-                <div>
-                    <label for="Ingrese su email">Email:</label>
-                    <input type="email" placeholder="Ingrese su email" />
+                <div class="mb-3 row">
+                    <label
+                        for="exampleFormControlInput1"
+                        class="form-label col-sm-2"
+                        >Email</label
+                    >
+                    <div class="col-sm-10">
+                        <input
+                            type="email"
+                            class="form-control col-sm-10"
+                            id="exampleFormControlInput1"
+                            placeholder="Email"
+                        />
+                    </div>
                 </div>
-                <div>
-                    <label> Cantidad de invitados: </label>
-                    <input type="number" placeholder="Seleccione" />
+                <div class="mb-3 row">
+                    <label
+                        for="exampleFormControlInput1"
+                        class="form-label col-sm-2"
+                        >Cantidad de Invitados</label
+                    >
+                    <div class="col-sm-10">
+                        <input
+                            type="number"
+                            class="form-control col-sm-10"
+                            id="exampleFormControlInput1"
+                            placeholder="Cantidad de Invitados"
+                        />
+                    </div>
                 </div>
-                <div>
-                    <label for="Fecha y hora">Fecha y Hora:</label>
-                    <input type="datetime-local" placeholder="Fecha y hora" />
+                <div class="mb-3 row">
+                    <label
+                        for="exampleFormControlInput1"
+                        class="form-label col-sm-2"
+                        >Fecha y Hora</label
+                    >
+                    <div class="col-sm-10">
+                        <input
+                            type="datetime-local"
+                            class="form-control col-sm-10"
+                            id="exampleFormControlInput1"
+                            placeholder="Nombre"
+                        />
+                    </div>
                 </div>
-                <div>
-                    <input type="submit" />
-                    <input type="reset" />
+                <div class="row">
+                    <div class="col-sm-6 d-grid gap-1">
+                    <input class="btn btn-primary"  type="submit" />
+                </div>
+                <div class="col-sm-6 d-grid gap-1">
+                    <input class="btn btn-secondary btn-block"  type="reset" />
+                </div>
                 </div>
             </form>
         </section>
@@ -123,5 +167,6 @@
 
             <a class="link" href="https://www.Facebook.com">Nuestro Facebook</a>
         </footer>
+        <script src="../js/bootstrap.min.js"></script>
     </body>
 </html>

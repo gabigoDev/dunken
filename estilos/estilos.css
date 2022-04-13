@@ -83,7 +83,6 @@ footer {
     background-repeat: no-repeat;
     background-position: top right;
     background-position: center;
-    height: 600px;
 }
 .footer div {
     font-size: large;
@@ -220,6 +219,7 @@ transition: 0.5s;
     filter:none;
     transform: scale(1.1)
 }
+
 
 /* media query mobile*/
 @media screen and (max-width: 480px) {

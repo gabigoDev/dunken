@@ -1,0 +1,40 @@
+.menuPrincipal {
+  background-color: "$colorprincipal";
+  height: 105px;
+  position: sticky;
+  z-index: 1;
+  display: block;
+  top: 0%;
+  padding: 0% 10%; }
+  .menuPrincipal ul {
+    list-style: none;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center; }
+  .menuPrincipal a {
+    text-decoration: none;
+    color: white; }
+  .menuPrincipal li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px; }
+
+.tiendaImagen img {
+  width: 40vw;
+  height: 35vh; }
+  .tiendaImagen img hover {
+    transform: scale(1.2);
+    transition: 1s; }
+
+.portadaNosotros {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr; }
+
+img {
+  filter: grayscale(100%);
+  transition: all 1.5s; }
+  img:hover {
+    filter: none;
+    transform: scale(1.1); 
+  }

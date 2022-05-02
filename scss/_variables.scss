@@ -1,1 +1,15 @@
 $colorprincipal: black;
+
+/*mapa*/
+$redes: (
+    facebook: #3a5795,
+    twitter: cyan 
+);
+/*bucle para usar los valores del mapa*/
+
+@each $clave, $valor in $redes {
+    .a--#{$clave} {
+        color: $valor;
+        font-style: normal;
+    }
+}

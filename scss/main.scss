@@ -1,5 +1,8 @@
-@import "menuprincipal";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
 @import "variables";
+@import "mixin";
+@import "tienda";
+@import "menuprincipal";
 
 
 
@@ -15,7 +18,7 @@
 .portadaNosotros {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;}
+    grid-template-columns: 1fr 1fr;
         img {
         filter: grayscale(100%);
             transition: all 1.5s;
@@ -23,5 +26,6 @@
         filter:none;
             transform: scale(1.1)
         }
+    }
 }
 

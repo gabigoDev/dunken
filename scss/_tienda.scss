@@ -1,0 +1,15 @@
+.tiendaImagen {
+    background-color: antiquewhite;
+    img {
+        width: 40vw;
+        height: 35vh;
+        &:hover {
+            transform: scale(1.2);
+            transition: 1s;
+        }
+    }
+    &--centrada {
+        @extend .tiendaImagen;
+        grid-column: 1/3;
+    }
+}

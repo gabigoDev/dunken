@@ -1,0 +1,26 @@
+/* media query tablet*/
+
+@media screen and (max-width: 1200px) {
+    .menuPrincipal {
+        padding: 0%;
+    }
+    .menuPrincipal li {
+        padding: 5px;
+        font-size: 15px;
+    }
+    .itemEventos img {
+        width: 85%;
+    }
+    body {
+        background-size: 300%;
+        background-position: center center;
+    }
+    .portadaNosotros {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .portadaNosotros img {
+        width: 80%;
+        height: auto;
+    }
+}

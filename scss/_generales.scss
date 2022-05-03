@@ -1,0 +1,119 @@
+.headerIzquierda li :hover {
+    color: $colorBordes;
+    transition: 0.5s;
+    }
+    
+    .headerDerecha li :hover{
+        color: $colorBordes;
+        transition: 0.5s; 
+    }
+
+    .gridMenu {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+body {
+    margin: 0px;
+    padding: 0%;
+    background-color: $colorPrincipal;
+    background-image: url(../imagenes/portada.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+section {
+    flex-grow: 1;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: $colorSecundario;
+    color: white;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 100%;
+}
+
+
+div {
+    text-align: center;
+}
+section {
+    text-align: center;
+    font-style: italic;
+}
+h3 {
+    text-align: center;
+    text-decoration: solid;
+    font-style: italic;
+    font-size: large;
+}
+
+.menuPrincipal {
+    background-color: $colorSecundario;
+    height: 105px;
+    position: sticky;
+    z-index: 1;
+    display: block;
+    top: 0%;
+    padding: 0% 10%;
+    ul { @include lista-sin-estilo;
+        width: 90%;
+        text-align: center;
+        li {
+            display: inline-block;
+            padding: 20px;
+            font-size: 20px;
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: 'Merriweather', serif;
+            }
+        }
+    }
+}
+
+.subtitulos {
+    color: $colorSecundario;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 200%;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+.link {
+    text-decoration: underline;
+    color: white;
+    font-style: italic;
+}
+
+.portada {
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position: center;
+}
+
+
+
+.parrafoObjetivo {
+    font-size: 20px;
+}
+
+@each $clave, $valor in $redes {
+    .a--#{$clave}:hover{
+        color: $valor;
+        font-style: normal;
+    }
+}

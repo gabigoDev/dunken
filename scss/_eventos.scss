@@ -1,0 +1,22 @@
+@keyframes despliegue {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.itemEventos {
+    font-size: 30px;
+    animation-name: despliegue;
+    animation-duration: 2s;
+
+        .itemEventos img {
+        border-top: 35px;
+        }
+    }
+
+
+
+

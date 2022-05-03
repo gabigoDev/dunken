@@ -1,0 +1,20 @@
+.reservasContacto {
+    margin: 0% 10%;
+    padding: 2%;
+    padding-top: 0%;
+
+    background-color: $colorPrincipal;
+    border: solid 2px $colorBordes;
+}
+.mapa div {
+    display: inline-block;
+    min-width: 40%;
+}
+.mapa h2 {
+    margin-top: 10px;
+    border: solid 2px $colorBordes;
+    background-color: $colorPrincipal;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 2%;
+}

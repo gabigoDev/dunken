@@ -1,0 +1,14 @@
+@mixin lista {
+    margin: 0% auto;
+    padding: 0%;
+}
+@mixin lista-sin-estilo {
+    @include lista;
+    list-style: none;
+}
+
+@mixin lista-punteada {
+    @include lista;
+    list-style: circle;
+}
+

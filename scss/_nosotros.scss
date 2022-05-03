@@ -1,0 +1,17 @@
+.portadaNosotros {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    img {
+        filter: grayscale(100%);
+        transition: all 1.5s;
+        &:hover {
+            filter: none;
+            transform: scale(1.1);
+        }
+    }
+}
+.portadaNosotros img {
+    height: 75vh;
+    border-color: $colorSecundario;
+}

@@ -1,31 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
 @import "variables";
 @import "mixin";
+@import "generales";
+@import "index";
+@import "nosotros";
 @import "tienda";
-@import "menuprincipal";
-
-
-
-.tiendaImagen img {
-    width: 40vw;
-    height: 35vh;
-        & hover{
-            transform: scale(1.2);
-            transition: 1s;
-    }
-}
-
-.portadaNosotros {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-        img {
-        filter: grayscale(100%);
-            transition: all 1.5s;
-            &:hover{
-        filter:none;
-            transform: scale(1.1)
-        }
-    }
-}
-
+@import "eventos";
+@import "contacto";
+@import "mediaCelular";
+@import "mediaTablet";

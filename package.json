@@ -1,7 +1,7 @@
 {
-  "name": "paginas",
+  "name": "idea_cafeteria_lencinas",
   "version": "1.0.0",
-  "description": "",
+  "description": "Dun Ken es una casa de Cafe ubicada en la provincia de Mendoza",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/gabigoDev/dunken.git"
   },
-  "author": "",
+  "author": "Jesus Lencinas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gabigoDev/dunken/issues"

@@ -1,0 +1,68 @@
+/* media query mobile*/
+@media screen and (max-width: 480px) {
+    .gridMenu {
+        grid-template-columns: 1fr 2fr;
+        font-size: 10px;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .gridMenu .headerIzquierda {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .logoIndex {
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+    .logoIndex img {
+        height: 100px;
+    }
+    .headerDerecha {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .menuPrincipal {
+        padding: 0%;
+    }
+    .menuPrincipal li {
+        padding: 5px;
+        font-size: 15px;
+    }
+    body {
+        background-size: 400%;
+        background-position: center center;
+    }
+    .portada {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    .subtitulos {
+        display: block;
+    }
+    .gridTienda {
+        gap: auto;
+        grid-template-columns: 1fr;
+    }
+    .tiendaImagen img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .itemEventos h2 {
+        font-size: 20px;
+    }
+    .itemEventos img {
+        width: 85%;
+    }
+    .mapa iframe {
+        width: 85%;
+        height: 30vh;
+    }
+    .portadaNosotros {
+        grid-template-columns: 1fr;
+    }
+    .portadaNosotros img {
+        width: 85%;
+    }
+}
+

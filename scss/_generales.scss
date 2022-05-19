@@ -1,10 +1,10 @@
 .headerIzquierda li :hover {
-    color: $colorBordes;
+    color: $colorTerciario;
     transition: 0.5s;
     }
     
     .headerDerecha li :hover{
-        color: $colorBordes;
+        color: $colorTerciario;
         transition: 0.5s; 
     }
 
@@ -19,7 +19,6 @@ body {
     margin: 0px;
     padding: 0%;
     background-color: $colorPrincipal;
-    background-image: url(../imagenes/portada.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -41,7 +40,6 @@ footer {
     background-color: $colorSecundario;
     color: white;
     text-align: center;
-    font-family: "Times New Roman", Times, serif;
     font-size: 100%;
 }
 
@@ -61,7 +59,7 @@ h3 {
 }
 
 .menuPrincipal {
-    background-color: $colorSecundario;
+    background-color: $colorNegro;
     height: 105px;
     position: sticky;
     z-index: 1;
@@ -78,25 +76,33 @@ h3 {
             a {
                 text-decoration: none;
                 color: white;
-                font-family: 'Merriweather', serif;
+                font-family:'Dancing Script', cursive;
             }
         }
     }
 }
 
 .subtitulos {
-    color: $colorSecundario;
+    color: $colorNegro;
     font-style: normal;
     font-weight: bold;
-    font-size: 200%;
-    font-family: "Times New Roman", Times, serif;
+    font-size: 150%;
+    font-family: 'Dancing Script';
     text-align: center;
 }
 
 .link {
-    text-decoration: underline;
     color: white;
     font-style: italic;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 5em;
+}
+.sectionFooter_titulos{
+    font-size: 20px;
+    color: $colorTerciario;
+    text-align: left;
+    padding-left: 3em;
 }
 
 .portada {
@@ -109,6 +115,16 @@ h3 {
 
 .parrafoObjetivo {
     font-size: 20px;
+}
+
+.btn-violet{
+    background-color: $colorSecundario;
+    color: white;
+}
+
+i {  
+    font-size: 25px;
+    align-items: center;
 }
 
 @each $clave, $valor in $redes {

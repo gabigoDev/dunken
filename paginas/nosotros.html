@@ -17,6 +17,7 @@
             name="keywords"
             content="cafe, coffee, casa de cafe, Mendoza, Argentina, desayuno, merienda,cena, brunch"
         />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="../estilos/main.css" />
         <title>Nosotros-DunKen Casa de Café</title>
     </head>
@@ -39,7 +40,7 @@
             </ul>
         </header>
 
-        <h1 id="bienvenida">NOSOTROS</h1>
+        <h1 id="bienvenida">Nosotros</h1>
 
         <h2 class="subtitulos">
             DunKen es una casa de café de especialidad, ubicada en Mendoza.
@@ -67,16 +68,48 @@
                 quia?
             </p>
         </section>
-        <footer>
-            <div>Visitanos y llevate una gran experiencia</div>
-            &copy; Dun ken
-
-            <a class="link a--facebook" href="https://www.Facebook.com"
-                >Nuestro Facebook</a
-            >
-            <a class="link a--twitter" href="https://twitter.com/?lang=es">
-                Nuestro Twitter</a
-            >
+        <footer class="container-fluid p-3">
+            <div class="row">
+                <h4 class="col-12">
+                    Visitanos y descubri todo lo que tenemos para vos
+                </h4>
+            </div>
+            <div class="row d-flex justify-content-between">
+                <div class="col px-5">
+                    <p class="sectionFooter_titulos">
+                        Contáctanos
+                    </p>
+                    <div class="flex-column d-flex">
+                    <a class="link a--facebook text-start" href="https://www.Facebook.com">
+                        <i class="fa-brands fa-facebook-square"></i>
+                        Nuestro Facebook</a
+                    >
+                    <a
+                        class="link a--twitter text-start"
+                        href="https://twitter.com/?lang=es"
+                    >
+                        <i class="fa-brands fa-twitter"></i>
+                        Nuestro Twitter</a
+                    >
+                </div>
+                </div>
+                <div class="col px-5">
+                    <p class="sectionFooter_titulos"> Medios de pago</p>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-paypal"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-diners-club"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                </div>
+            </div>
+            <div>
+                <span> &copy; Dun Ken </span>
+            </div>
         </footer>
+        <script src="js/bootstrap.min.js"></script>
+        <script
+            src="https://kit.fontawesome.com/812dcedff5.js"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

@@ -3,22 +3,23 @@
     .gridMenu {
         grid-template-columns: 1fr 2fr;
         font-size: 10px;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
     .gridMenu .headerIzquierda {
-        grid-column: 2;
-        grid-row: 1;
+        grid-column: 1/3;
+        grid-row: 2; 
+        flex-direction: column;
     }
     .logoIndex {
         grid-column: 1;
-        grid-row: 1/3;
+        grid-row: 1;
     }
     .logoIndex img {
         height: 100px;
     }
     .headerDerecha {
-        grid-column: 2;
-        grid-row: 2;
+        grid-column:1/3;
+        grid-row: 3;
     }
     .menuPrincipal {
         padding: 0%;
@@ -63,6 +64,16 @@
     }
     .portadaNosotros img {
         width: 85%;
+    }
+    .boton-menu{
+        grid-column: 2;
+        grid-row: 1;
+        color: white;
+    }
+    .boton-menu i{
+        grid-column: 2;
+        grid-row: 1;
+        color: white;
     }
 }
 

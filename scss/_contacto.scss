@@ -10,11 +10,12 @@
     display: inline-block;
     min-width: 40%;
 }
-.mapa h2 {
-    margin-top: 10px;
-    border: solid 2px $colorTerciario;
-    background-color: $colorPrincipal;
-    width: max-content;
-    margin: 0 auto;
-    margin-top: 2%;
+
+.dondeEncontrarnos{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 300%;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
 }
+

@@ -1,17 +1,20 @@
 .portadaNosotros {
-    display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;
     img {
+        object-fit: cover;
+        max-height: 80vh;
         filter: grayscale(100%);
-        transition: all 1.5s;
+        transition: all 1.2s;
         &:hover {
             filter: none;
-            transform: scale(1.1);
+            transform: scale(1, 1);
         }
     }
 }
-.portadaNosotros img {
-    height: 75vh;
+.imgResponsive {
+    width: 100%;
+    height: auto;
     border-color: $colorSecundario;
+    object-fit: cover;
+    max-height: 50vh;
 }

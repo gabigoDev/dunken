@@ -17,57 +17,165 @@
             name="keywords"
             content="cafe, coffee, casa de cafe, Mendoza, Argentina, desayuno, merienda,cena, brunch"
         />
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
         <link rel="stylesheet" href="../estilos/main.css" />
         <title>Nosotros-DunKen Casa de Café</title>
     </head>
 
     <body>
-        <header class="menuPrincipal">
-            <ul class="gridMenu">
-                <div class="headerIzquierda">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                </div>
-                <div class="logoIndex">
-                    <img src="../imagenes/logoindex.jpg" alt="logoindex" />
-                </div>
-                <div class="headerDerecha">
-                    <li><a href="tienda.html">Tienda</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </div>
-            </ul>
+        <header id="header" class="navbar navbar-expand-lg bg-black pb-0">
+            <div class="container-fluid flex-wrap">
+                <a class="navbar-brand" href="#">
+                    <img
+                        class="navbarImg"
+                        src="../imagenes/cofee-logo-nav.jpg"
+                        alt="dunKen"
+                    />
+                    <span class="px-2 text-white">Dun Ken Casa de Café</span>
+                </a>
+                <input
+                    type="checkbox"
+                    id="burger_menu"
+                    class="burger_button__checkbox d-none"
+                />
+                <label class="burger_button btn d-md-none" for="burger_menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="nav justify-content-center d-none d-md-flex">
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active link"
+                            aria-current="page"
+                            href="../index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="../paginas/eventos.html"
+                            >Eventos</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="../paginas/tienda.html"
+                            >Tienda</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="../paginas/contacto.html"
+                            >Contacto</a
+                        >
+                    </li>
+                </ul>
+            </div>
         </header>
 
-        <h1 id="bienvenida">Nosotros</h1>
+        <h1 id="tituloDePagina">Nosotros</h1>
 
         <h2 class="subtitulos">
             DunKen es una casa de café de especialidad, ubicada en Mendoza.
         </h2>
         <h3>¿Te gusta el café, las historias y los buenos momentos?</h3>
 
-        <div class="portadaNosotros">
-            <div>
-                <img src="../imagenes/nosotros_2.jpg" />
-            </div>
-            <div>
-                <img src="../imagenes/nosotros_3.jpg" />
-            </div>
+        <div class="portadaNosotros text-center">
+            <img
+                class="img-fluid"
+                src="../imagenes/nosotros-3.jpg"
+                alt="personas con tazas de cafe"
+            />
         </div>
-        <section>
-            <h2>Objetivo</h2>
-            <p class="parrafoObjetivo">
-                Nuestro objetivo es que te sientas como en tu casa. Para
-                trabajar, compartir con tu familia, amigos. Conectarte a una
-                reunion disfrutando un latte italiano, en fin, creamos buenos
-                momentos. Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Molestias, quibusdam ea. Rerum dicta, ex modi qui
-                accusamus laudantium aliquid perferendis dolores ipsam,
-                exercitationem eius eaque beatae provident blanditiis asperiores
-                quia?
-            </p>
+        <section class="container p-3 mb-2">
+            <div class="row">
+                <h2 class="col-12 titulosSeccion">Objetivo</h2>
+                <div class="col-12 col-md-6 d-flex">
+                    <p class="parrafoSecciones align-self-center">
+                        Nuestro objetivo es que te sientas como en tu casa. Para
+                        trabajar, compartir con tu familia, amigos. Conectarte a
+                        una reunion disfrutando un latte italiano. Hacemos
+                        enfasis para que puedas disfrutar de una gran
+                        experiencia en nuestro espacio recreado para vos.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img
+                        class="imgResponsive"
+                        src="../imagenes/nosotros-brindis.jpg"
+                        alt="personas en una cafeteria"
+                    />
+                </div>
+            </div>
+            <div class="row">
+                <h5 class="col-12 titulosSeccion">Nuestra Mision</h5>
+                <div class="col-12 col-md-6">
+                    <img
+                        src="../imagenes/coffee-nosotros.jpg"
+                        class="imgResponsive"
+                        alt="cartel-luminoso"
+                    />
+                </div>
+                <div class="col-12 col-md-6 d-flex">
+                    <p class="parrafoSecciones align-self-center">
+                        Inspirar y nutrir el espíritu humano: Una persona, una
+                        taza y una comunidad a la vez. Estos son los principios
+                        que rigen el cumplimiento de nuestra misión día a día
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <h5 class="col-12 titulosSeccion">Nuestro Cafe</h5>
+                <div class="col-12 col-md-6 d-flex">
+                    <p class="parrafoSecciones align-self-center">
+                        El olor al café, a unos granos recién tostados, es la
+                        mejor bienvenida que cada día planificamos para
+                        brindarles cuando abrimos las puertas de nuestras
+                        tiendas. Pero eso es sólo el comienzo. De cuerpo entero,
+                        un poco ahumado, con notas cítricas, con fuerte
+                        presencia de chocolate…el desafío que tenemos
+                        constantemente es que cada uno de nuestros clientes
+                        encuentre su mezcla favorita y a la vez, que explore
+                        nuestras amplias selecciones más singulares. Para
+                        alcanzarlo nos abastecemos de los mejores granos de café
+                        arábicos siguiendo siempre estrictos principios éticos.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <img
+                        class="imgResponsive"
+                        src="../imagenes/nosotros_2.jpg"
+                        alt="granos de cafe"
+                    />
+                </div>
+            </div>
+
+            <div class="row">
+                <h5 class="col-12 titulosSeccion">Nuestros Valores</h5>
+                <div class="col-12 col-md-6">
+                    <img
+                        src="../imagenes/nosotros-4.jpg"
+                        class="imgResponsive"
+                        alt="gente en una cafeteria"
+                    />
+                </div>
+                <div class="col-12 col-md-6 d-flex">
+                    <p class="parrafoSecciones align-self-center">
+                        Asumimos el compromiso, con total convicción, de
+                        promover la inclusión, la diversidad y la equidad en
+                        nuestras tiendas y en cada proyecto que desarrollamos en
+                        cualquier comunidad de Mendoza. Solo así, con políticas
+                        e iniciativas concretas y realizables, entendemos que
+                        estaremos más cerca de generar cambios tangibles y
+                        duraderos que nos lleven a construir ambientes libres de
+                        discriminación, con libertad e igualdad de oportunidades
+                        para todos los que hacen y forman parte de nuestros
+                        espacios.
+                    </p>
+                </div>
+            </div>
         </section>
+
         <footer class="container-fluid p-3">
             <div class="row">
                 <h4 class="col-12">
@@ -76,25 +184,28 @@
             </div>
             <div class="row d-flex justify-content-between">
                 <div class="col px-5">
-                    <p class="sectionFooter_titulos">
-                        Contáctanos
-                    </p>
+                    <p class="sectionFooter_titulos">Contáctanos</p>
                     <div class="flex-column d-flex">
-                    <a class="link a--facebook text-start" href="https://www.Facebook.com">
-                        <i class="fa-brands fa-facebook-square"></i>
-                        Nuestro Facebook</a
-                    >
-                    <a
-                        class="link a--twitter text-start"
-                        href="https://twitter.com/?lang=es"
-                    >
-                        <i class="fa-brands fa-twitter"></i>
-                        Nuestro Twitter</a
-                    >
-                </div>
+                        <a
+                            class="link a--facebook text-start"
+                            target="_blank"
+                            href="https://www.Facebook.com"
+                        >
+                            <i class="fa-brands fa-facebook-square"></i>
+                            Nuestro Facebook</a
+                        >
+                        <a
+                            class="link a--twitter text-start"
+                            target="_blank"
+                            href="https://twitter.com/?lang=es"
+                        >
+                            <i class="fa-brands fa-twitter"></i>
+                            Nuestro Twitter</a
+                        >
+                    </div>
                 </div>
                 <div class="col px-5">
-                    <p class="sectionFooter_titulos"> Medios de pago</p>
+                    <p class="sectionFooter_titulosPago">Medios de pago</p>
                     <i class="fa-brands fa-cc-visa"></i>
                     <i class="fa-brands fa-paypal"></i>
                     <i class="fa-brands fa-cc-mastercard"></i>

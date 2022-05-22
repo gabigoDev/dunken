@@ -29,38 +29,59 @@
     </head>
 
     <body>
-        <header class="menuPrincipal">
-            <ul class="gridMenu">
-                <div class="headerIzquierda d-none d-md-flex">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="paginas/nosotros.html">Nosotros</a></li>
-                </div>
-                <div class="logoIndex">
-                    <img src="imagenes/logoindex.jpg" alt="logoindex" />
-                </div>
-                <div class="headerDerecha d-none d-md-flex">
-                    <li><a href="paginas/tienda.html">Tienda</a></li>
-                    <li><a href="paginas/eventos.html">Eventos</a></li>
-                    <li><a href="paginas/contacto.html">Contacto</a></li>
-                </div>
-                <div class="boton-menu">
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
-            </ul>
+        <header id="header" class="navbar navbar-expand-lg bg-black pb-0">
+            <div class="container-fluid flex-wrap">
+                <a class="navbar-brand nombreProyecto" href="#">
+                    <img
+                        class="navbarImg"
+                        src="imagenes/cofee-logo-nav.jpg"
+                        alt="dunKen"
+                    />
+                    <span class="px-2 text-white">Dun Ken</span>
+                </a>
+                <input
+                    type="checkbox"
+                    id="burger_menu"
+                    class="burger_button__checkbox d-none"
+                />
+                <label class="burger_button btn d-md-none" for="burger_menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="nav justify-content-center d-none d-md-flex">
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active link"
+                            aria-current="page"
+                            href="index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="paginas/nosotros.html"
+                            >Nosotros</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="paginas/eventos.html"
+                            >Eventos</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="paginas/tienda.html"
+                            >Tienda</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="paginas/contacto.html"
+                            >Contacto</a
+                        >
+                    </li>
+                </ul>
+            </div>
         </header>
 
         <section class="portada">
-            <h1 id="bienvenida">Bienvenidos a nuestra casa de Café</h1>
+            <h1 id="tituloDePagina">Bienvenidos a nuestra casa de Café</h1>
             <div>
                 <h2 class="subtitulos">
                     Somos amantes de todo lo que hacemos y sobre todo, de los
@@ -101,12 +122,12 @@
                         <img
                             src="imagenes/carrousel_1.jpg"
                             class="d-block w-100"
-                            alt=""
+                            alt="taza de cafe"
                         />
                         <div
                             class="carousel-caption d-none d-md-block resaltadoLetraCarousel"
                         >
-                            <h5>DESCONEXION A PURO SABOR</h5>
+                            <h5>DESCONEXIÓN A PURO SABOR</h5>
                             <p>
                                 Relajá y desconectá de tu dia a dia con nuestro
                                 cafe de especialidad.
@@ -117,7 +138,7 @@
                         <img
                             src="imagenes/carrousel_2.jpg"
                             class="d-block w-100"
-                            alt="..."
+                            alt="taza de cafe con crema"
                         />
                         <div
                             class="carousel-caption d-none d-md-block resaltadoLetraCarousel"
@@ -132,7 +153,7 @@
                         <img
                             src="imagenes/carrousel_3.jpg"
                             class="d-block w-100"
-                            alt="..."
+                            alt="taza de cafe"
                         />
                         <div
                             class="carousel-caption d-none d-md-block resaltadoLetraCarousel"
@@ -174,7 +195,7 @@
         </section>
         <section class="container p-3 mb-2">
             <div class="row">
-                <h2 class="col nuestrasSelecciones">
+                <h2 class="col titulosSeccion">
                     Nuestras selecciones para Vos
                 </h2>
             </div>
@@ -182,7 +203,7 @@
                 <div class="col-12 col-md-4 mb-3 p-3 card">
                     <div class="card-body">
                         <h3 class="card-title tituloTarjeta">Capsulas</h3>
-                        <p class="presentacionCafe card-text">
+                        <p class="card-text">
                             Te invitamos a disfrutar sofisticadas y exquisitas
                             experiencias de un buen café en cápsulas, a partir
                             de los mejores granos cuidadosamente seleccionados,
@@ -191,7 +212,7 @@
                         </p>
                     </div>
                     <img
-                        class="card-img-bottom nuestrasSelecciones_imagenes"
+                        class="card-img-bottom titulosSeccion_imagenes"
                         src="imagenes/imagenUnoIndex.jpg"
                         alt="capsulas de cafe"
                     />
@@ -201,7 +222,7 @@
                         <h3 class="card-title tituloTarjeta">
                             Pasion por lo que hacemos
                         </h3>
-                        <p class="presentacionCafe card-text">
+                        <p class="card-text">
                             Nuestras cápsulas son totalmente compatibles con
                             máquinas expresso y están hechas de aluminio,
                             material perfecto para proteger la calidad, sabor y
@@ -209,7 +230,7 @@
                         </p>
                     </div>
                     <img
-                        class="card-img-bottom nuestrasSelecciones_imagenes"
+                        class="card-img-bottom titulosSeccion_imagenes"
                         src="imagenes/imagenDosIndex.jpg"
                         alt="cafetera expreso"
                     />
@@ -219,14 +240,14 @@
                         <h3 class="card-title tituloTarjeta">
                             Calidad comprobada
                         </h3>
-                        <p class="presentacionCafe card-text">
+                        <p class="card-text">
                             Granos 100% arábigos seleccionados cuidadosamente
                             para una experiencia única de café italiano
                             Classico.
                         </p>
                     </div>
                     <img
-                        class="card-img-bottom nuestrasSelecciones_imagenes"
+                        class="card-img-bottom titulosSeccion_imagenes"
                         src="imagenes/imagenTresIndex.jpg"
                         alt="cafe arabico"
                     />
@@ -241,25 +262,28 @@
             </div>
             <div class="row d-flex justify-content-between">
                 <div class="col px-5">
-                    <p class="sectionFooter_titulos">
-                        Contáctanos
-                    </p>
+                    <p class="sectionFooter_titulos">Contáctanos</p>
                     <div class="flex-column d-flex">
-                    <a class="link a--facebook text-start" href="https://www.Facebook.com">
-                        <i class="fa-brands fa-facebook-square"></i>
-                        Nuestro Facebook</a
-                    >
-                    <a
-                        class="link a--twitter text-start"
-                        href="https://twitter.com/?lang=es"
-                    >
-                        <i class="fa-brands fa-twitter"></i>
-                        Nuestro Twitter</a
-                    >
-                </div>
+                        <a
+                            class="link a--facebook text-start"
+                            target="_blank"
+                            href="https://www.Facebook.com"
+                        >
+                            <i class="fa-brands fa-facebook-square"></i>
+                            Nuestro Facebook</a
+                        >
+                        <a
+                            class="link a--twitter text-start"
+                            target="_blank"
+                            href="https://twitter.com/?lang=es"
+                        >
+                            <i class="fa-brands fa-twitter"></i>
+                            Nuestro Twitter</a
+                        >
+                    </div>
                 </div>
                 <div class="col px-5">
-                    <p class="sectionFooter_titulos"> Medios de pago</p>
+                    <p class="sectionFooter_titulosPago">Medios de pago</p>
                     <i class="fa-brands fa-cc-visa"></i>
                     <i class="fa-brands fa-paypal"></i>
                     <i class="fa-brands fa-cc-mastercard"></i>

@@ -2,19 +2,12 @@
 /*mapa*/
 /*bucle para usar los valores del mapa*/
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:ital,wght@1,300&family=Raleway:wght@500;600;700;800&display=swap");
-.headerIzquierda li :hover {
+.link:hover {
   color: #ecb678;
   transition: 0.5s; }
 
-.headerDerecha li :hover {
-  color: #ecb678;
-  transition: 0.5s; }
-
-.gridMenu {
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
-  justify-content: center;
-  align-items: center; }
+.burger_button {
+  grid-column: 3; }
 
 body {
   margin: 0px;
@@ -36,7 +29,7 @@ ul {
 footer {
   margin-top: auto;
   width: 100%;
-  background-color: #5A3365;
+  background-color: #5a3365;
   color: white;
   text-align: center;
   font-size: 100%; }
@@ -57,7 +50,6 @@ h3 {
 .menuPrincipal {
   background-color: black;
   height: 105px;
-  position: sticky;
   z-index: 1;
   display: block;
   top: 0%;
@@ -67,7 +59,8 @@ h3 {
     padding: 0%;
     list-style: none;
     width: 90%;
-    text-align: center; }
+    text-align: center;
+    background-color: black; }
     .menuPrincipal ul li {
       display: inline-block;
       padding: 20px;
@@ -75,44 +68,58 @@ h3 {
       .menuPrincipal ul li a {
         text-decoration: none;
         color: white;
-        font-family: 'Dancing Script', cursive; }
+        font-family: "Dancing Script", cursive; }
 
 .subtitulos {
   color: black;
   font-style: normal;
   font-weight: bold;
   font-size: 150%;
-  font-family: 'Dancing Script';
+  font-family: "Dancing Script";
   text-align: center; }
 
 .link {
   color: white;
   font-style: italic;
   text-decoration: none;
-  font-size: 20px;
-  padding-left: 5em; }
+  font-size: 20px; }
 
 .sectionFooter_titulos {
   font-size: 20px;
-  color: #ecb678;
   text-align: left;
   padding-left: 3em; }
+  .sectionFooter_titulosPago {
+    text-align: center;
+    font-size: 20px; }
 
 .portada {
   background-repeat: no-repeat;
   background-position: top right;
   background-position: center; }
 
-.parrafoObjetivo {
+.parrafoSecciones {
   font-size: 20px; }
 
 .btn-violet {
-  background-color: #5A3365;
+  background-color: #5a3365;
   color: white; }
 
 i {
   font-size: 25px;
   align-items: center; }
+
+.titulosSeccion {
+  font-family: "Dancing Script", cursive;
+  margin-top: 20vh;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5vh;
+  font-size: 50px;
+  border-bottom: solid 3px #5a3365; }
+  .titulosSeccion_imagenes {
+    max-width: 100%;
+    max-height: 50vh;
+    object-fit: cover; }
 
 .a--facebook:hover {
   color: #3a5795;
@@ -122,14 +129,14 @@ i {
   color: cyan;
   font-style: normal; }
 
-#bienvenida {
-  color: #5A3365;
+#tituloDePagina {
+  color: #5a3365;
   margin-top: 5vh;
   margin-bottom: 2vh;
   font-style: normal;
   font-weight: bold;
   font-size: 300%;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   text-align: center; }
 
 .subtitulos {
@@ -138,19 +145,6 @@ i {
 
 .logoIndex img {
   height: 105px; }
-
-.nuestrasSelecciones {
-  font-family: 'Dancing Script', cursive;
-  margin-top: 20vh;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 5vh;
-  font-size: 50px;
-  border-bottom: solid 3px #5A3365; }
-  .nuestrasSelecciones_imagenes {
-    max-width: 100%;
-    max-height: 50vh;
-    object-fit: cover; }
 
 .card {
   background-color: transparent;
@@ -162,23 +156,26 @@ i {
 
 .tituloTarjeta {
   font-size: 2em;
-  color: #5A3365;
+  color: #5a3365;
   font-weight: bold; }
 
 .portadaNosotros {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr; }
+  justify-content: center; }
   .portadaNosotros img {
+    object-fit: cover;
+    max-height: 80vh;
     filter: grayscale(100%);
-    transition: all 1.5s; }
+    transition: all 1.2s; }
     .portadaNosotros img:hover {
       filter: none;
-      transform: scale(1.1); }
+      transform: scale(1, 1); }
 
-.portadaNosotros img {
-  height: 75vh;
-  border-color: #5A3365; }
+.imgResponsive {
+  width: 100%;
+  height: auto;
+  border-color: #5a3365;
+  object-fit: cover;
+  max-height: 50vh; }
 
 .cardTienda {
   background-color: antiquewhite;
@@ -219,30 +216,16 @@ i {
   display: inline-block;
   min-width: 40%; }
 
-.mapa h2 {
-  margin-top: 10px;
-  border: solid 2px #ecb678;
-  background-color: #f1e9e1;
-  width: max-content;
-  margin: 0 auto;
-  margin-top: 2%; }
+.dondeEncontrarnos {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 300%;
+  font-family: 'Dancing Script', cursive;
+  text-align: center; }
 
 /* media query mobile*/
 @media screen and (max-width: 480px) {
-  .gridMenu {
-    grid-template-columns: 1fr 2fr;
-    font-size: 10px;
-    grid-template-rows: repeat(3, 1fr); }
-  .gridMenu .headerIzquierda {
-    grid-column: 1/3;
-    grid-row: 2;
-    flex-direction: column; }
-  .logoIndex {
-    grid-column: 1;
-    grid-row: 1; }
-  .logoIndex img {
-    height: 100px; }
-  .headerDerecha {
+  .link {
     grid-column: 1/3;
     grid-row: 3; }
   .menuPrincipal {
@@ -275,18 +258,26 @@ i {
   .portadaNosotros {
     grid-template-columns: 1fr; }
   .portadaNosotros img {
-    width: 85%; }
-  .boton-menu {
-    grid-column: 2;
-    grid-row: 1;
-    color: white; }
-  .boton-menu i {
-    grid-column: 2;
-    grid-row: 1;
-    color: white; } }
+    width: 85%; } }
 
 /* media query tablet*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
+  .burger_button {
+    grid-template-columns: 1fr 2fr auto;
+    font-size: 10px;
+    grid-template-rows: 1fr auto auto; }
+  #burger_menu:checked ~ .nav {
+    display: block !important;
+    flex-direction: column;
+    z-index: 2;
+    width: 100%;
+    background-color: #5a3365; }
+  .nav-item {
+    border-bottom: 1px solid white; }
+  .burger_button i {
+    grid-column: 3;
+    grid-row: 1;
+    color: white; }
   .menuPrincipal {
     padding: 0%; }
   .menuPrincipal li {

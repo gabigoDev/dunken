@@ -17,7 +17,7 @@
             name="keywords"
             content="cafe, coffee, casa de cafe, Mendoza, Argentina, desayuno, merienda,cena, brunch"
         />
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
         <link rel="stylesheet" href="../estilos/main.css" />
         <link
             rel="stylesheet"
@@ -27,35 +27,127 @@
     </head>
 
     <body>
-        <header class="menuPrincipal">
-            <ul class="gridMenu">
-                <div class="headerIzquierda">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                </div>
-                <div class="logoIndex">
-                    <img src="../imagenes/logoindex.jpg" alt="logoindex" />
-                </div>
-                <div class="headerDerecha">
-                    <li><a href="tienda.html">Tienda</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </div>
-            </ul>
+        <header id="header" class="navbar navbar-expand-lg bg-black pb-0">
+            <div class="container-fluid flex-wrap">
+                <a class="navbar-brand" href="#">
+                    <img
+                        class="navbarImg"
+                        src="../imagenes/cofee-logo-nav.jpg"
+                        alt="dunKen"
+                    />
+                    <span class="px-2 text-white">Dun Ken Casa de Café</span>
+                </a>
+                <input
+                    type="checkbox"
+                    id="burger_menu"
+                    class="burger_button__checkbox d-none"
+                />
+                <label class="burger_button btn d-md-none" for="burger_menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="nav justify-content-center d-none d-md-flex">
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active link"
+                            aria-current="page"
+                            href="../index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="../paginas/nosotros.html"
+                            >Nosotros</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="../paginas/tienda.html"
+                            >Tienda</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="../paginas/contacto.html"
+                            >Contacto</a
+                        >
+                    </li>
+                </ul>
+            </div>
         </header>
-        <section>
-            <h1 id="bienvenida">Eventos</h1>
-            <div>
-                <h4> Estamos en los detalles de tus momentos unicos
-                    e inolvidables.
-                </h4>
+        <h1 id="tituloDePagina">Eventos</h1>
+        <div>
+            <h4>
+                Estamos en los detalles de tus momentos unicos e inolvidables.
+            </h4>
+        </div>
+        <section class="container p-3 mb-2">
+            <div class="row">
+                <h2 class="col-12 titulosSeccion">Casamientos</h2>
+                <div class="col-12 col-md-6 d-flex">
+                    <p class="parrafoSecciones align-self-center">
+                        En Dun Ken entendemos la importancia de un día tan
+                        especial como lo es tu boda. Es por ello que nos
+                        esmeramos en lograr que el días más importante de tu
+                        vida se realmente mágico y especial, tal y como siempre
+                        has soñado. Si te vas a casar y sientes que necesitas
+                        quien te ayude y oriente en todo el proceso de la
+                        organización, nos ponemos a tu completa disposición,
+                        contamos con un equipo de trabajo especializado.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img
+                        class="imgResponsive"
+                        src="../imagenes/boda-eventos.jpg"
+                        alt="evento de casamiento"
+                    />
+                </div>
             </div>
-            <div>
-                
+            <div class="row">
+                <h5 class="col-12 titulosSeccion">Cumpleaños</h5>
+                <div class="col-12 col-md-6">
+                    <img
+                        src="../imagenes/cumpleanios-eventos.jpg"
+                        class="imgResponsive"
+                        alt="Cumpleaños"
+                    />
+                </div>
+                <div class="col-12 col-md-6 d-flex">
+                    <p class="parrafoSecciones align-self-center">
+                        Preparamos aperitivos y tortas especiales llenas de
+                        sabor listas para servir, que se caracterizan por su
+                        frescura, calidad y ese toque casero, ya que cada uno de
+                        estos es preparado a mano, el mismo día y con mucho
+                        amor. Cada aperitivo tiene su detalle, preparado con
+                        mucho cariño. ¡A disfrutar!
+                    </p>
+                </div>
             </div>
-        
+            <div class="row">
+                <h5 class="col-12 titulosSeccion">Tardes de Té</h5>
+                <div class="col-12 col-md-6 d-flex">
+                    <p class="parrafoSecciones align-self-center">
+                        "Una simple taza de té está lejos de ser un asunto
+                        simple." Mary Lou Heiss. Contamos con una amplia y
+                        variada CARTA DE TÉ EN HEBRAS (más de 40 variedades)
+                        importados de Oriente, blendeados con productos europeos
+                        y argentinos. En ella podrás encontrar hebras puras y
+                        blends que pueden disfrutarse en la mesa recreando una
+                        verdadera “ceremonia de té“.
+                    </p>
+                </div>
 
+                <div class="col-12 col-md-6">
+                    <img
+                        class="imgResponsive"
+                        src="../imagenes/tarde-de-te-eventos.jpg"
+                        alt="tarde de te"
+                    />
+                </div>
+            </div>
         </section>
+
         <footer class="container-fluid p-3">
             <div class="row">
                 <h4 class="col-12">
@@ -64,25 +156,28 @@
             </div>
             <div class="row d-flex justify-content-between">
                 <div class="col px-5">
-                    <p class="sectionFooter_titulos">
-                        Contáctanos
-                    </p>
+                    <p class="sectionFooter_titulos">Contáctanos</p>
                     <div class="flex-column d-flex">
-                    <a class="link a--facebook text-start" href="https://www.Facebook.com">
-                        <i class="fa-brands fa-facebook-square"></i>
-                        Nuestro Facebook</a
-                    >
-                    <a
-                        class="link a--twitter text-start"
-                        href="https://twitter.com/?lang=es"
-                    >
-                        <i class="fa-brands fa-twitter"></i>
-                        Nuestro Twitter</a
-                    >
-                </div>
+                        <a
+                            class="link a--facebook text-start"
+                            target="_blank"
+                            href="https://www.Facebook.com"
+                        >
+                            <i class="fa-brands fa-facebook-square"></i>
+                            Nuestro Facebook</a
+                        >
+                        <a
+                            class="link a--twitter text-start"
+                            target="_blank"
+                            href="https://twitter.com/?lang=es"
+                        >
+                            <i class="fa-brands fa-twitter"></i>
+                            Nuestro Twitter</a
+                        >
+                    </div>
                 </div>
                 <div class="col px-5">
-                    <p class="sectionFooter_titulos"> Medios de pago</p>
+                    <p class="sectionFooter_titulosPago">Medios de pago</p>
                     <i class="fa-brands fa-cc-visa"></i>
                     <i class="fa-brands fa-paypal"></i>
                     <i class="fa-brands fa-cc-mastercard"></i>

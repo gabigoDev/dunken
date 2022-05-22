@@ -22,24 +22,56 @@
         <title>Contacto-DunKen Casa de Cafe</title>
     </head>
     <body>
-        <header class="menuPrincipal">
-            <ul class="gridMenu">
-                <div class="headerIzquierda">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                </div>
-                <div class="logoIndex">
-                    <img src="../imagenes/logoindex.jpg" alt="logoindex" />
-                </div>
-                <div class="headerDerecha">
-                    <li><a href="tienda.html">Tienda</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </div>
-            </ul>
+        <header id="header" class="navbar navbar-expand-lg bg-black pb-0 m-0">
+            <div class="container-fluid flex-wrap">
+                <a class="navbar-brand" href="#">
+                    <img
+                        class="navbarImg"
+                        src="../imagenes/cofee-logo-nav.jpg"
+                        alt="dunKen"
+                    />
+                    <span class="px-2 text-white">Dun Ken Casa de Café</span>
+                </a>
+                <input
+                    type="checkbox"
+                    id="burger_menu"
+                    class="burger_button__checkbox d-none"
+                />
+                <label class="burger_button btn d-md-none" for="burger_menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="nav justify-content-center d-none d-md-flex">
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active link"
+                            aria-current="page"
+                            href="../index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="../paginas/nosotros.html"
+                            >Nosotros</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="../paginas/eventos.html"
+                            >Eventos</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="../paginas/tienda.html"
+                            >Tienda</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </header>
         <section>
-            <h1 id="bienvenida">Contacto</h1>
+            <h1 id="tituloDePagina">Contacto</h1>
             <div>
                 <p>Nuestro telefono: +54 2616458965</p>
                 <p>Nuestro email: dunken@gmail.com</p>
@@ -145,35 +177,45 @@
             </form>
         </section>
 
-        <section class="mapa">
-            <h2>¿Donde encontrarnos?</h2>
-            <div>
-                <h3>
-                    Casa Central, calle Aristides Villanueva 263, Ciudad de
-                    Mendoza
-                </h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.2216980023986!2d-68.85468920583163!3d-32.89230623475751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e090709278635%3A0x67e6ca4f6f2909fc!2sAv.%20Ar%C3%ADstides%20Villanueva%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1647292685211!5m2!1ses-419!2sar"
-                    width="400"
-                    height="300"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                ></iframe>
+        <section class="container p-3 mb-2">
+            <div class="row">
+                <h2 class="col dondeEncontrarnos">¿Donde encontrarnos?</h2>
             </div>
-            <div>
-                <h3>
-                    Dun Ken Chacras de Coria, ubicado en el departamento de
-                    Lujan, Mendoza
-                </h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13387.468498236749!2d-68.88565546745848!3d-32.98090729457274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0af3dc0e8f1f%3A0x6b647646861df9cf!2sChacras%20de%20Coria%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1647293034346!5m2!1ses-419!2sar"
-                    width="400"
-                    height="300"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                ></iframe>
+            <div class="row g-2">
+                <article class="col-12 col-md-6 mb-3 p-3">
+                    <div class="card-body">
+                        <h3 class="card-title tituloTarjeta">
+                            Casa Central, calle Aristides Villanueva 263, Ciudad
+                            de Mendoza.
+                        </h3>
+                        <iframe
+                            class="mapa"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.2216980023986!2d-68.85468920583163!3d-32.89230623475751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e090709278635%3A0x67e6ca4f6f2909fc!2sAv.%20Ar%C3%ADstides%20Villanueva%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1647292685211!5m2!1ses-419!2sar"
+                            width="400"
+                            height="300"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 mb-3 p-3">
+                    <div class="card-body">
+                        <h3 class="card-title tituloTarjeta">
+                            Dun Ken Chacras de Coria, ubicado en el departamento
+                            de Lujan, Mendoza.
+                        </h3>
+                        <iframe
+                            class="mapa"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13387.468498236749!2d-68.88565546745848!3d-32.98090729457274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0af3dc0e8f1f%3A0x6b647646861df9cf!2sChacras%20de%20Coria%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1647293034346!5m2!1ses-419!2sar"
+                            width="400"
+                            height="300"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                </article>
             </div>
         </section>
 
@@ -185,25 +227,28 @@
             </div>
             <div class="row d-flex justify-content-between">
                 <div class="col px-5">
-                    <p class="sectionFooter_titulos">
-                        Contáctanos
-                    </p>
+                    <p class="sectionFooter_titulos">Contáctanos</p>
                     <div class="flex-column d-flex">
-                    <a class="link a--facebook text-start" href="https://www.Facebook.com">
-                        <i class="fa-brands fa-facebook-square"></i>
-                        Nuestro Facebook</a
-                    >
-                    <a
-                        class="link a--twitter text-start"
-                        href="https://twitter.com/?lang=es"
-                    >
-                        <i class="fa-brands fa-twitter"></i>
-                        Nuestro Twitter</a
-                    >
-                </div>
+                        <a
+                            class="link a--facebook text-start"
+                            target="_blank"
+                            href="https://www.Facebook.com"
+                        >
+                            <i class="fa-brands fa-facebook-square"></i>
+                            Nuestro Facebook</a
+                        >
+                        <a
+                            class="link a--twitter text-start"
+                            target="_blank"
+                            href="https://twitter.com/?lang=es"
+                        >
+                            <i class="fa-brands fa-twitter"></i>
+                            Nuestro Twitter</a
+                        >
+                    </div>
                 </div>
                 <div class="col px-5">
-                    <p class="sectionFooter_titulos"> Medios de pago</p>
+                    <p class="sectionFooter_titulosPago">Medios de pago</p>
                     <i class="fa-brands fa-cc-visa"></i>
                     <i class="fa-brands fa-paypal"></i>
                     <i class="fa-brands fa-cc-mastercard"></i>
